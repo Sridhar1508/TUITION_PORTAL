@@ -1,7 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZHQH435KN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QZHQH435KN');
+</script>
 <title>PHOENIX TUTORS</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +17,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
     <link rel="shortcut icon" href="images/favicon.avif" >
 	<style>
-		form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-label, input, textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-textarea {
-  height: 150px;
-}
-button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button[type="submit"]:hover {
-  background-color: #45a049;
-}
 		.main_nav_item {
 			position: relative;
 			display: inline-block;
@@ -63,15 +49,7 @@ button[type="submit"]:hover {
         	white-space: nowrap;
     	}
 	</style>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZHQH435KN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QZHQH435KN');
-</script>
 </head>
 <body>
 
@@ -81,28 +59,27 @@ button[type="submit"]:hover {
 		<div class="header_content d-flex flex-row align-items-center">
 			<!-- Logo -->
 			<div class="logo_container">
-				<a href="index.html">
+                <a href="index.html">
 				<div class="logo">
-					<img src="images/logoP.png" style="width: 50px;">
+					<img src="images/logoP.png" alt="" style="width: 50px;">
 					<span>PHOENIX</span>
-				</div></a>
+				</div>
+                </a>
 			</div>
-
-
 			<!-- Main Navigation -->
 			<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="index.html">HOME</a></li>
-						<li class="main_nav_item"><a href="index.html">ABOUT US</a></li>
-						<li class="main_nav_item"><a href="index.html">COURSES</a></li>
+						<li class="main_nav_item"><a href="#home">HOME</a></li>
+						<li class="main_nav_item"><a href="#home">ABOUT US</a></li>
+						<li class="main_nav_item"><a href="#course">COURSES</a></li>
 						<li class="main_nav_item"><a href="#">LOGIN</a>
 							<ul>
 								<li><a href="https://sridhar2003.pythonanywhere.com/studlogin" style="color: black;">STUDENT LOGIN</a></li>
 								<li><a href="https://sridhar2003.pythonanywhere.com/" style="color: black;">ADMIN LOGIN</a></li>
 							</ul>
 						</li>
-						<li class="main_nav_item"><a href="#">CONTACT</a></li>
+						<li class="main_nav_item"><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -125,11 +102,11 @@ button[type="submit"]:hover {
 		</div>
 		<!-- Menu Items -->
 		<div class="menu_inner menu_mm">
-			<div class="menu menu_mm">
+			<div class="menu menu_mm" style="padding-left: 15%;">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="index.html">HOME</a></li>
-					<li class="menu_item menu_mm"><a href="index.html">ABOUT US</a></li>
-					<li class="menu_item menu_mm"><a href="index.html">COURSES</a></li>
+					<li class="menu_item menu_mm"><a href="#home">HOME</a></li>
+					<li class="menu_item menu_mm"><a href="#home">ABOUT US</a></li>
+					<li class="menu_item menu_mm"><a href="#course">COURSES</a></li>
 					<li class="menu_item menu_mm">
 						<ul>
 							<li><a href="https://sridhar2003.pythonanywhere.com/studlogin">STUDENT LOGIN</a></li>
@@ -138,89 +115,408 @@ button[type="submit"]:hover {
 					</li>
 					<li class="menu_item menu_mm"><a href="contact.html">CONTACT</a></li>
 				</ul>
-			</div>
 
+				<!-- Menu Social -->
+			</div>
 		</div>
 	</div>
 	
 	<!-- Home -->
-	<div class="home">
-		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(images/contact_background.jpg)"></div>
-		</div>
-		<div class="home_content">
-			<h1>CONTACT</h1>
-		</div>
-	</div>
-	<!-- Contact -->
-	<div class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8">
-
-<!--					&lt;!&ndash; Contact Form &ndash;&gt;  <input type="email" name="_replyto" />-->
-					<div class="contact_form">
-						<div class="contact_title">GET IN TOUCH</div>
-
-						<div class="contact_form_container">
-							<form id="contact-form" method="POST" action="https://formspree.io/f/mnqyldqe">
-								<input name="_name" id="name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required." style="background: lightcyan;">
-								<input name="_replyto" id="email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required." style="background: lightcyan;">
-								<textarea id="message" class="text_field contact_form_message" name="message" placeholder="Message" required="required" data-error="Please, write us a message." style="background: lightcyan;"></textarea>
-								<button type="submit" class="contact_send_btn trans_200">send message</button>
-							</form>
+	<div class="home" id="home">
+		<!-- Hero Slider -->
+		<div class="hero_slider_container">
+			<div class="hero_slider owl-carousel">
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><span>Get your Education today!</span> </h1>
 						</div>
 					</div>
-						
 				</div>
-				<div class="col-lg-4">
-					<div class="about">
-						<div class="about_title">JOIN COURSE</div>
-						<p class="about_text">Discover Your Path to Success: Enroll in Our Comprehensive Courses Today!</p>
-						<div class="contact_info">
-							<ul>
-								<li class="contact_info_item">
-									<div class="contact_info_icon">
-										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									1/126,Phase-II,Manali New Town,Chennai-600103
-								</li>
-								<li class="contact_info_item">
-									<div class="contact_info_icon">
-										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>
-									+91 8056098766
-								</li>
-								<li class="contact_info_item">
-									<div class="contact_info_icon">
-										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
-									</div>phoenixxtutors@gmail.com
-								</li>
-							</ul>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/kk5.jfif)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+                            <h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut" style="color: white"><span>Knowledge is power</span></h1>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/l5.jpg)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut"><span> Learn , Grow , Succeed</span></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
+			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div>
+		</div>
+	</div>
+	<div class="hero_boxes" >
+		<div class="hero_boxes_inner">
+			<div class="container">
+
+				<div class="row">
+                    <a href="courses.html">
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/earth-globe.svg" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Technical Courses</h2>
+								<a href="courses.html" class="hero_box_link">view more</a>
+							</div>
+						</div>
+					</div>
+                    </a>
+                    <a href="non_tech_courses.html">
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/books.svg" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Non Technical Courses</h2>
+								<a href="non_tech_courses.html" class="hero_box_link">view more</a>
+							</div>
+						</div>
+					</div>
+                        </a>
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/professor.svg" class="svg" alt="">
+							<div class="hero_box_content">
+                                <a href="teachers.html"><h2 class="hero_box_title">Our Tutors</h2></a>
+								<a href="teachers.html" class="hero_box_link">view more</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Popular -->
+	<div class="popular page_section" id="course">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Popular Courses</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row course_boxes">
+				
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+                    <a href="non_tech_courses.html">
+					<div class="card">
+						<img class="card-img-top" src="images/cc1.avif" height="263px">
+						<div class="card-body text-center">
+							<div class="card-title" style="color: black;font-size: larger">SCIENCE (Phy,Che,Bio)</div>
+							<div class="card-text">CBSE & STATE BOARD 9TH-12TH</div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+<!--								<img src="images/senthil_img12.jpg" alt="https://unsplash.com/@mehdizadeh">-->
+							</div>
+							<div class="course_author_name">TUTOR - SENTHIL</div></div>
+					</div>
+                </a>
+				</div>
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+                    <a href="non_tech_courses.html">
+					<div class="card">
+						<img class="card-img-top" src="images/cc2.jpg" height="263px">
+						<div class="card-body text-center">
+							<div class="card-title" style="color: black;font-size: larger">MATHEMATICS</div>
+							<div class="card-text">CBSE & STATE BOARD 9TH-12TH</div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+<!--								<img src="images/author.jpg" alt="https://unsplash.com/@mehdizadeh">-->
+							</div>
+							<div class="course_author_name">TUTOR - SENTHIL</div></div>
+					</div>
+                    </a>
+				</div>
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+                    <a href="courses.html">
+					<div class="card">
+						<img class="card-img-top" src="images/computercourse.jpg" height="263px">
+						<div class="card-body text-center">
+							<div class="card-title" style="color: black;font-size: larger">COMPUTER SCIENCE</div>
+							<div class="card-text">CBSE & STATE BOARD 11TH & 12TH</div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+<!--								<img src="images/author.jpg" alt="https://unsplash.com/@mehdizadeh">-->
+							</div>
+							<div class="course_author_name">TUTOR - SRIDHAR</div></div>
+					</div>
+                    </a>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<!-- Register -->
+	<div class="register">
+		<div class="container-fluid">
+			
+			<div class="row row-eq-height">
+				<div class="col-lg-6 nopadding">
+					
+					<!-- Register -->
 
+					<div class="register_section d-flex flex-column align-items-center justify-content-center">
+						<div class="register_content text-center">
+							<h1 class="register_title">Enroll Now for the <span>2023-2024</span> Academic Year and Unlock a World of Opportunities!</h1>
+							<p class="register_text" style="color: black">Invest in Your Education: Join Our Tuition Center and Prepare for a Brighter Future Today!</p>
+							<div class="button button_1 register_button mx-auto trans_200"><a href="contact.html">register now</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 nopadding">
+					
+					<!-- Search -->
+					<div class="search_section d-flex flex-column align-items-center justify-content-center">
+						<div class="search_background" style="background-image:url(images/search_background.jpg);"></div>
+						<div class="search_content text-center">
+							<h1 class="search_title">SEARCH FOR YOUR COURSE</h1>
+							<form id="search_form">
+                                <label class="col-sm-3 col-form-label" style="color: black;font-size: larger">CATEGORY</label>
+                                <select class="form-control" style="color: #ffb606" name="category" id="category">
+                                  <option selected >SELECT...</option>
+                                <option value="non-technical">NON - TECHNICAL</option>
+                                <option value="technical">TECHNICAL</option>
+                              </select>
+								<button id="search_submit_button" type="submit" class="search_submit_button trans_200" value="Submit" >SEARCH COURSE</button>
+							</form>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Services -->
+	<div class="services page_section">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Our Services</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row services_row">
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+<!--						<img src="images/earth-globe.svg" alt="">-->
+						<img src="images/professor.svg" alt="">
+					</div>
+					<h3>INDOOR CLASSES</h3>
+					<p>Providing good and safety learning environment for the past 4 years.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+<!--						<img src="images/exam.svg" alt="">-->
+						<img src="images/earth-globe.svg">
+					</div>
+					<h3>ONLINE CLASSES</h3>
+					<p>Offering online tuition classes for 10th and 12th CBSE & State board science stream students.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/books.svg" alt="">
+					</div>
+
+					<h3>HOME TUITION</h3>
+					<p>Offering home tuition classes for 10th and 12th CBSE & State board science stream students.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/exam.svg" alt="">
+					</div>
+
+					<h3>INHAND TECHNICAL TRAINING</h3>
+					<p>Deep-tech trainings on Programming, Problem solving skills, Full stack Web development, DBMS concepts for the school and college students.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Testimonials -->
+	<div class="testimonials page_section" id="test">
+		<!-- <div class="testimonials_background" style="background-image:url(images/testimonials_background.jpg)"></div> -->
+		<div class="testimonials_background_container prlx_parent">
+			<div class="testimonials_background prlx" style="background-image:url(images/img3.jpg)"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>WHAT OUR STUDENTS SAYS</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					
+					<div class="testimonials_slider_container">
+
+						<!-- Testimonials Slider -->
+						<div class="owl-carousel owl-theme testimonials_slider">
+
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">As a first batch student at Phoenix Tuition Center, I can say that my experience has been positive overall. The tutor is highly experienced and knowledgeable about the respective subjects. My tutor uses a variety of teaching methods and resources to make learning more engaging and effective. One thing that stands out about the center is the level of individual attention and support provided to students. Lastly, I feel proud to be one of the tutors at Phoenix Tuition Center. </p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">SRIDHAR V</div>
+										<div class="testimonial_title">2019-2020</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">As a first batch student of Phoenix tuition center, I can say that the center places a strong emphasis on student security, safety and quality education for students. In terms of my overall experience at Phoenix tuition center, I found my tutor Senthil Anna, to be highly skilled and knowledgeable. He is passionate about teaching and has a deep understanding of the subjects. I could not have achieved academic success without his guidance and mentorship. I want to thank the tuition center for their unwavering support and encouragement.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">PRANNAV L</div>
+										<div class="testimonial_title">2019-2020</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">The tuition center is a promising new entrant in the tuition industry. I highly recommend it to students looking for quality education and a supportive environment. My tuition center also offers a range of supplementary services to help students develop soft skills such as communication, critical thinking, and problem solving. My tutor was always available to offer support and guidance, and he created a nurturing and inclusive environment that made us feel supported and valued.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">HARI NARAYANAN</div>
+										<div class="testimonial_title">2020-2021</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">As an alumnus of Phoenix Tutors, I can confidently say that the centre played a crucial role in my academic success. I attended the centre for several years during my high school years and the quality of education and support I received was versatile. One of the things I appreciated most about the centre was the personalized attention given to each student. My mentor is knowledgeable and experienced, and he uses a variety of teaching methods to ensure each student understands the concepts. Overall, I highly recommend Phoenix Tutors to any student looking for quality education and support.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">GOKULA KRISHNAN</div>
+										<div class="testimonial_title">2021-2022</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">The experience of being my tutor's student has been very efficient and beneficial.  I like his way of teaching and the knowledge he expresses to make us understand the lesson easier. His teaching makes classes interesting & exciting. I thank my tutor for all his assistance, support, time and effort in helping us understand & grasp the concept. There is no doubt that there is 100% security at my tuition center. I'm sure he gives the finest to the students to make their future bright...!!</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">RITHIKA</div>
+										<div class="testimonial_title">2021-2022</div>
+									</div>
+								</div>
+							</div>
+							<!-- Testimonials Item -->
+
+
+							<!-- Testimonials Item -->
+
+
+							<!-- Testimonials Item -->
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">My tuition center is a place where I learnt many things which helped me to face my CBSE board examinations. One of the most valuable things I experienced was that it led me to rise and stand up against the biggest obstacles I faced during 12th grade. My tutor, Senthil bro is passionate about the subjects and goes above and beyond to ensure that students understand them. He provides plenty of practice opportunities and encourages us to ask questions and seek clarifications. I thank my tutor for everything he did for me.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">ABIMANYU</div>
+										<div class="testimonial_title">2022-2023</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">The tuition center provides a safe and easy learning environment, provides proper security, offers clear explanations for the topics, conducts mock tests, and interacts with us about higher education, goals, etc.The centre's commitment to its students' success is unparalleled, and I am grateful for the education and experiences that I received during my time there. The centre also provides ample opportunities for students to practice what they learn, with regular test series and mock exams. I just wanted to take a second to truly thank my tutor for all of the time, effort, and help he has given me.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">RUPHASHREE</div>
+										<div class="testimonial_title">2022-2023</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">I attended the tuition centre for two years during my high school years, and I can confidently say that it was one of the right decisions I made. The center provided an exceptional standard of education and support that helped me achieve my academic goals. The center's curriculum was well-structured and comprehensive, and the materials provided were of high quality. One of the things that stood out to me was the personal attention given to each student. The tutors were knowledgeable, and dedicated to helping students anytime. Additionally, tutors provided regular feedback to parents, which helped keep everyone informed.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">GAYATHRI</div>
+										<div class="testimonial_title">2022-2023</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item">
+								<div class="testimonials_item text-center">
+									<div class="quote">“</div>
+									<p class="testimonials_text">I had the privilege of attending the Phoenix Tuition Center in my 12th class. The center offered an unparalleled level of education and support that enabled me to exceed my academic expectations. Instead of simply teaching the subjects, my tutor helped us develop critical thinking skills and understand the practical applications of what we learned. This not only helped us perform well in exams, but also helped us develop a deeper understanding of subjects. The center's unique teaching approach and commitment to student well-being make it an exceptional choice for anyone looking to excel academically and personally.</p>
+									<div class="testimonial_user">
+										<div class="testimonial_name">MICHEAL SIDDHARTH</div>
+										<div class="testimonial_title">2022-2023</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
-
 	<footer class="footer">
 		<div class="container">
+			
 			<!-- Footer Content -->
-			<div class="footer_content">
+			<div class="footer_content" id="contact">
 				<div class="row">
 					<!-- Footer Column - About -->
 					<div class="col-lg-3 footer_col">
 						<!-- Logo -->
 						<div class="logo_container">
-							<div class="logo">
-								<img src="images/logoP.png" alt="" style="width: 50px;">
+							<a href="index.html"><div class="logo">
+								<img src="images/logoP.png" style="width: 50px;">
 								<span>PHOENIX</span>
 							</div>
+                                </a>
 						</div>
-
 						<p class="footer_about_text">Empowering students for success through innovative learning: Join our tuition center and unlock your potential today.</p>
 					</div>
 					<!-- Footer Column - Menu -->
@@ -228,9 +524,9 @@ button[type="submit"]:hover {
 						<div class="footer_column_title">Menu</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="index.html">Home</a></li>
-								<li class="footer_list_item"><a href="index.html">About Us</a></li>
-								<li class="footer_list_item"><a href="index.html">Courses</a></li>
+								<li class="footer_list_item"><a href="#home">Home</a></li>
+								<li class="footer_list_item"><a href="#home">About Us</a></li>
+								<li class="footer_list_item"><a href="#course">Courses</a></li>
 								<li class="footer_list_item"><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
@@ -242,11 +538,11 @@ button[type="submit"]:hover {
 <!--						<div class="footer_column_title">QUICK LINKS</div>-->
 <!--						<div class="footer_column_content">-->
 <!--							<ul>-->
-<!--								<li class="footer_list_item"><a href="index.html">Testimonials</a></li>-->
+<!--								<li class="footer_list_item"><a href="#test">Testimonials</a></li>-->
 <!--								<li class="footer_list_item"><a href="#">FAQ</a></li>-->
 <!--								<li class="footer_list_item"><a href="#">Community</a></li>-->
-<!--								<li class="footer_list_item"><a href="index.html">Campus Pictures</a></li>-->
-<!--								<li class="footer_list_item"><a href="index.html">Tuitions</a></li>-->
+<!--								<li class="footer_list_item"><a href="#home">Campus Pictures</a></li>-->
+<!--								<li class="footer_list_item"><a href="#home">Tuitions</a></li>-->
 <!--							</ul>-->
 <!--						</div>-->
 <!--					</div>-->
@@ -279,17 +575,16 @@ button[type="submit"]:hover {
 					</div>
 				</div>
 			</div>
-
 			<!-- Footer Copyright -->
-
 			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
 				<div class="footer_copyright">
 					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
 Copyright &copy; All rights reserved | PHOENIX TUTORS | 2023 <br>
                         <br>
                         Designed By <span>SENTHIL KUMAR</span>
                         <br>
-                        Developed By <span>SRIDHAR</span></span></span>
+                        Developed By <span>SRIDHAR</span></span>
 				</div>
 			</div>
 		</div>
@@ -297,28 +592,24 @@ Copyright &copy; All rights reserved | PHOENIX TUTORS | 2023 <br>
 
 </div>
 
+
 <script>
-	const form = document.getElementById('contact-form');
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', form.action);
-  xhr.setRequestHeader('Accept', 'application/json');
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      form.reset();
-      alert('Thank you for your message!');
-    } else {
-      alert('Oops! Something went wrong.');
-    }
-  };
-  xhr.send(formData);
-});
+	// Get the form element and add a submit event listener
+    var form = document.getElementById("search_form");
+    form.addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        // Get the value of the selected option
+        var category = document.getElementById("category").value;
+        // Use the value to navigate to the corresponding page
+        if (category === "non-technical") {
+            window.location.href = "non_tech_courses.html";
+        } else if (category === "technical") {
+            window.location.href = "courses.html";
+        }
+    });
 
 </script>
-
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
@@ -328,10 +619,10 @@ form.addEventListener('submit', e => {
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/contact_custom.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
